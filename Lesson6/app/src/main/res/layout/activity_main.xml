@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/groupNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Group Number"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/listNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/groupNumberEditText"
+        android:layout_marginTop="16dp"
+        android:hint="List Number"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/favoriteMovieEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listNumberEditText"
+        android:layout_marginTop="16dp"
+        android:hint="Favorite Movie/Series"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/favoriteMovieEditText"
+        android:layout_marginTop="16dp"
+        android:text="Save"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
